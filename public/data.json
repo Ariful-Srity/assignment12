@@ -1,0 +1,56 @@
+[
+    {
+        "_id": "jkshjkahjkhajhfj",
+        "Name": "Drill machine",
+        "Availablequantity": 3,
+        "MinimumOrders": 5,
+        "Price": 200,
+        "Details": "This is a Brand new machine with all the feature.",
+        "img": "https://i.ibb.co/7CnMH2D/drillbit.jpg"
+    },
+    {
+        "_id": "ahfkjhasjkdfhjaksdhfjk",
+        "Name": " Driling Nuts",
+        "Availablequantity": 5,
+        "Price": 2000,
+        "MinimumOrders": 5,
+        "Details": "Good and very realiable for any driling work.So love it to buy",
+        "img": "https://i.ibb.co/4t0vyyY/drillbit1.jpg"
+    },
+    {
+        "_id": "jakhjkahsdfjhasdfjhaf",
+        "Name": "Extra Nuts",
+        "Availablequantity": 3,
+        "Price": 1000,
+        "MinimumOrders": 5,
+        "Details": "These nuts is very hard and useful",
+        "img": "https://i.ibb.co/4s0DvM3/drillbit2.jpg"
+    },
+    {
+        "_id": "aidfouiaxcvkjaf",
+        "Name": "Box of Nuts",
+        "Availablequantity": 2,
+        "MinimumOrders": 5,
+        "Price": 500,
+        "Details": "These nuts is very hard and useful",
+        "img": "https://i.ibb.co/3zbcB1C/drillbit3.jpg"
+    },
+    {
+        "_id": "klacoquewfijqhfjh",
+        "Name": "Drill tools",
+        "Availablequantity": 3,
+        "MinimumOrders": 5,
+        "Price": 300,
+        "Details": "These nuts is very hard and useful",
+        "img": "https://i.ibb.co/J7JMD3H/drillbit4.jpg"
+    },
+    {
+        "_id": "kzjacioqwjfjncadsicvuyh",
+        "Price": 200,
+        "Name": "Drill",
+        "MinimumOrders": 5,
+        "Availablequantity": 5,
+        "Details": "These nuts is very hard and useful",
+        "img": "https://i.ibb.co/YPwHBMK/drillbit5.jpg"
+    }
+]
