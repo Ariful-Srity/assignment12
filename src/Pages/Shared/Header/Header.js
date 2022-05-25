@@ -30,32 +30,30 @@ const Header = () => {
                 Register
             </Link>}
         </li>
-        <li>{user ?
 
-            <button className="btn btn-ghost" onClick={logout} >Log Out</button> : <Link to="/login">Login</Link>
-
-
-
-        }</li>
 
         {
 
 
 
             user && <div>
+                <Link to='/dashboard' className='mr-2 btn bg-white text-black border-0'>Dashboard</Link>
                 <span>{user.displayName}</span>
 
-                <div class="dropdown dropdown-hover">
+                {/* <div class="dropdown dropdown-hover">
                     <label tabindex="0" class="btn m-1">Dashboard</label>
                     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-warning rounded-box w-52">
                         <li><Link to='/myorders'>My Orders</Link></li>
                         <li><Link to='/addreview'>Add A Review</Link></li>
                         <li><Link to='/myprofile'>My Profile</Link></li>
                     </ul>
-                </div>
+                </div> */}
 
             </div>
         }
+        <li>{user ?
+            <button className="btn btn-ghost" onClick={logout} >Log Out</button> : <Link to="/login">Login</Link>
+        }</li>
 
 
 

@@ -1,6 +1,5 @@
 [
     {
-        "_id": "jkshjkahjkhajhfj",
         "Name": "Drill machine",
         "Availablequantity": 3,
         "MinimumOrders": 5,
@@ -9,7 +8,6 @@
         "img": "https://i.ibb.co/7CnMH2D/drillbit.jpg"
     },
     {
-        "_id": "ahfkjhasjkdfhjaksdhfjk",
         "Name": " Driling Nuts",
         "Availablequantity": 5,
         "Price": 2000,
@@ -18,7 +16,6 @@
         "img": "https://i.ibb.co/4t0vyyY/drillbit1.jpg"
     },
     {
-        "_id": "jakhjkahsdfjhasdfjhaf",
         "Name": "Extra Nuts",
         "Availablequantity": 3,
         "Price": 1000,
@@ -27,7 +24,6 @@
         "img": "https://i.ibb.co/4s0DvM3/drillbit2.jpg"
     },
     {
-        "_id": "aidfouiaxcvkjaf",
         "Name": "Box of Nuts",
         "Availablequantity": 2,
         "MinimumOrders": 5,
@@ -36,7 +32,6 @@
         "img": "https://i.ibb.co/3zbcB1C/drillbit3.jpg"
     },
     {
-        "_id": "klacoquewfijqhfjh",
         "Name": "Drill tools",
         "Availablequantity": 3,
         "MinimumOrders": 5,
@@ -45,7 +40,6 @@
         "img": "https://i.ibb.co/J7JMD3H/drillbit4.jpg"
     },
     {
-        "_id": "kzjacioqwjfjncadsicvuyh",
         "Price": 200,
         "Name": "Drill",
         "MinimumOrders": 5,

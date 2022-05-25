@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
-    const { _id, Name, Details, img, Price, Availablequantity, Supplier } = service;
+    const { _id, Name, Details, img, Price, Availablequantity, MinimumOrders } = service;
 
     return (
         <div className="card w-96 bg-base-100 shadow-xl hover:bg-sky-200">
@@ -12,11 +12,11 @@ const Service = ({ service }) => {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{Name}</h2>
                 <p>{Details}</p>
-                <p>Minimum Orders:{ }</p>
+                <p>Minimum Orders: {MinimumOrders}</p>
                 <p>Available quantity:{Availablequantity}</p>
                 <p>price(Per Unit):{Price}</p>
                 <div className="card-actions">
-                    <Link to={`/purchase/${_id}`}  className="btn btn-primary">Purchase</Link>
+                    <Link to='/purchase' state={{ _id }} className="btn btn-primary">Purchase</Link>
                 </div>
             </div>
         </div>

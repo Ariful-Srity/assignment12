@@ -7,6 +7,8 @@ import Heroarea from '../Heroarea/Heroarea';
 import Business from '../Business/Business';
 import Reviews from '../Reviews/Reviews';
 
+import Faq from '../Faq/Faq';
+
 
 
 const Home = () => {
@@ -50,6 +52,7 @@ const Home = () => {
             <Heroarea></Heroarea>
             <Business></Business>
             <Reviews></Reviews>
+            <Faq></Faq>
 
 
         </div>
