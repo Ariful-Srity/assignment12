@@ -16,6 +16,7 @@ const MyOrders = () => {
     return (
         <div>
             <h2 className='text-2xl'>My Orders</h2>
+            <h2>orders for:{userOrders.address}</h2>
         </div>
     );
 };
