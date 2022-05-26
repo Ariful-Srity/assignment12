@@ -1,13 +1,26 @@
 import React from 'react';
+import useReviews from '../../Hooks/useReviews';
 import person1 from '../../images/person1.jpg';
 import person2 from '../../images/person2.jpg';
 import person3 from '../../images/person3.jpg';
+import Review from './Review';
+
 
 const Reviews = () => {
+    const [reviews] = useReviews()
     return (
         <div className='my-5'>
             <h1 className='text-warning text-center text-bold text-5xl my-8'>Customers Reviews</h1>
-            <div className='grid lg:grid-cols-3 gap-5'>
+
+            <div className=" grid lg:grid-cols-3 sm:grid-cols-1 gap-3">
+                {
+                    reviews.map(review => <Review
+                        key={review._id}
+                        review={review}
+                    ></Review>)
+                }
+            </div>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-5'>
 
 
 
