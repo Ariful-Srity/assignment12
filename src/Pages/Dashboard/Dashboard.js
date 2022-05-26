@@ -12,7 +12,7 @@ const Dashboard = () => {
                 <Link to='addReview' className='btn  btn-outline'>Add a Review</Link>
             </div>
             <div>
-                <h2 className='text-4xl text-center items-center'>Dashboard</h2>
+                <h2 className='text-4xl text-center items-center my-4'>Dashboard</h2>
                 <Outlet />
             </div>
         </div>

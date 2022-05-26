@@ -33,40 +33,41 @@ const AddReview = () => {
     }
 
     return (
-        <div>
-            <h2 className="text-2xl">Add a Review</h2>
-            <div class="card w-96 bg-info text-primary-content">
+        <div className='flex justify-center items-center gap-3'>
+            <h2 className="text-5xl text-warning text-center">Add a Review</h2>
+            <div className="card w-96 bg-info text-primary-content">
+
                 <form onSubmit={handleAddItem} class="card-body">
-                    <h2 class="card-title">Card title!</h2>
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text">Name</span>
+                    <h2 className="card-title">Add A Review Here</h2>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name='name' placeholder="Enter your name" class="input input-bordered" />
+                        <input type="text" name='name' placeholder="Enter your name" className="input input-bordered" />
                     </div>
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text">Image</span>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Image</span>
                         </label>
-                        <input type="text" name='img' placeholder="Enter Your Image URL" class="input input-bordered" />
+                        <input type="text" name='img' placeholder="Enter Your Image URL" className="input input-bordered" />
 
                     </div>
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text">Ratings</span>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Ratings</span>
                         </label>
-                        <input name='ratings' type="text" placeholder="Enter Your Ratings" class="input input-bordered" />
+                        <input name='ratings' type="text" placeholder="Enter Your Ratings" className="input input-bordered" />
 
                     </div>
-                    <div class="form-control">
-                        <label class="label">
-                            <span class="label-text">Descript</span>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Descript</span>
                         </label>
-                        <input type="text" name='description' placeholder="Description" class="input input-bordered" />
+                        <input type="text" name='description' placeholder="Description" className="input input-bordered" />
 
                     </div>
-                    <div class="form-control mt-6">
-                        <button type='submit' class="btn btn-warning">Submit</button>
+                    <div className="form-control mt-6">
+                        <button type='submit' className="btn btn-warning">Submit</button>
                     </div>
                 </form>
             </div>
