@@ -6,6 +6,7 @@ import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import Payment from './Pages/Dashboard/Payment';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
@@ -77,6 +78,15 @@ function App() {
         }
 
         ></Route>
+        <Route path='/payment' element={
+          <RequireAuth>
+            <Payment></Payment>
+          </RequireAuth>
+
+        }
+
+        ></Route>
+
 
 
         <Route path='*' element={<Notfound></Notfound>}></Route>

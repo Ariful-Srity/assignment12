@@ -27,14 +27,14 @@ const Purchase = () => {
 
         if (quantity < userSelectedItem?.MinimumOrders) {
             alert('Minimum Order not filled');
-        
+
 
         }
         else if (quantity > userSelectedItem?.Availablequantity) {
             alert('Stock not available');
         }
         else {
-            const order = { quantity, address, userName, userEmail, totalPrice, phone };
+            const order = { quantity, address, userName, userEmail, totalPrice, phone, toolName: userSelectedItem.Name };
 
             fetch('http://localhost:5000/orders', {
                 method: 'post',
@@ -99,7 +99,7 @@ const Purchase = () => {
                                 <input type="text" name='address' placeholder="Address" class="input input-bordered" />
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary">Orders</button>
+                                <button class="btn btn-primary">Place Order</button>
                             </div>
                         </div>
                     </div>
