@@ -90,13 +90,13 @@ const Purchase = () => {
                                 <label class="label">
                                     <span class="label-text">Phone</span>
                                 </label>
-                                <input type="text" name='phone' placeholder="Phone" class="input input-bordered" />
+                                <input type="text" name='phone' placeholder="Phone" class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Address</span>
                                 </label>
-                                <input type="text" name='address' placeholder="Address" class="input input-bordered" />
+                                <input type="text" name='address' placeholder="Address" class="input input-bordered" required />
                             </div>
                             <div class="form-control mt-6">
                                 <button class="btn btn-primary">Place Order</button>

@@ -7,6 +7,9 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import Payment from './Pages/Dashboard/Payment';
+import Users from './Pages/Dashboard/Users';
+
+
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
@@ -60,8 +63,15 @@ function App() {
               <AddReview />
             </RequireAuth>
           } />
+          <Route path='users' element={
+            <RequireAuth>
+              <Users />
+            </RequireAuth>
+          } />
 
         </Route>
+
+
 
         <Route path='/purchase/:id' element={
           <RequireAuth>
@@ -78,6 +88,8 @@ function App() {
         }
 
         ></Route>
+
+
         <Route path='/payment' element={
           <RequireAuth>
             <Payment></Payment>
@@ -92,7 +104,7 @@ function App() {
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
-    </div>
+    </div >
   );
 }
 

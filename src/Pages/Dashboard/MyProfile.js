@@ -20,9 +20,9 @@ const MyProfile = () => {
     }, [users, user.email]);
     console.log(users);
 
-    //if (loading || updateLoading) {
-    //  return <Loading />;
-    //  }
+    //  if (loading || updateLoading) {
+    //    return <Loading />;
+    //}
 
     const handleProfileUpdate = event => {
         event.preventDefault();
@@ -56,7 +56,7 @@ const MyProfile = () => {
     return (
         <div className=' mx-5 '>
 
-            <h2 className="fs-3 text-3xl">My Profile</h2>
+            <h2 className="text-3xl">My Profile</h2>
             <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-5">
 
                 <div>
@@ -64,7 +64,7 @@ const MyProfile = () => {
                     <p className='text-xl my-2 mb-0'>Username: {user.displayName}</p>
                     <p className='mb-0'>Email: {user.email}</p>
 
-                    <div className={loggedInUser?.education ? '' : 'hidden'}>
+                    <div className={loggedInUser?.education ? '' : ''}>
                         <p className='text-xl mb-0'>District: {loggedInUser?.location}</p>
                         <p className='mb-0'>Phone: {loggedInUser?.phone}</p>
                         <p className='mb-0'>Education: {loggedInUser?.education}</p>

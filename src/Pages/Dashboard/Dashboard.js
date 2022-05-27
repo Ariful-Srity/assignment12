@@ -10,6 +10,7 @@ const Dashboard = () => {
                 <Link to='myOrders' className='btn  btn-outline'>My Orders</Link>
                 <Link to='myProfile' className='btn  btn-outline'>My Profile</Link>
                 <Link to='addReview' className='btn  btn-outline'>Add a Review</Link>
+                <Link to='users' className='btn  btn-outline'>All Users</Link>
             </div>
             <div>
                 <h2 className='text-4xl text-center items-center my-4'>Dashboard</h2>

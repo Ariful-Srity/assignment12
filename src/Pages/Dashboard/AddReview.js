@@ -37,7 +37,7 @@ const AddReview = () => {
             <h2 className="text-5xl text-warning text-center">Add a Review</h2>
             <div className="card w-96 bg-info text-primary-content">
 
-                <form onSubmit={handleAddItem} class="card-body">
+                <form onSubmit={handleAddItem} className="card-body">
                     <h2 className="card-title">Add A Review Here</h2>
                     <div className="form-control">
                         <label className="label">
