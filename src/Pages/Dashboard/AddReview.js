@@ -10,10 +10,10 @@ const AddReview = () => {
         const Name = event.target.name.value;
 
         const Ratings = event.target.ratings.value;
-        const Description = event.target.description.value;
+        const Descript = event.target.description.value;
         const img = event.target.img.value;
 
-        const newItem = { Name, img, Ratings, Description };
+        const newItem = { Name, img, Ratings, Descript };
 
 
         fetch('http://localhost:5000/reviews', {
