@@ -1,5 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Blogs from './Pages/Blogs/Blogs';
 import AddReview from './Pages/Dashboard/AddReview';
@@ -8,6 +9,7 @@ import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import Payment from './Pages/Dashboard/Payment';
 import Users from './Pages/Dashboard/Users';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 import Home from './Pages/Home/Home';
@@ -20,6 +22,7 @@ import Purchase from './Pages/Purchase/Purchase';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Notfound from './Pages/Shared/Notfound/Notfound';
+import ManageallOrders from './Pages/Dashboard/ManageallOrders';
 
 function App() {
   return (
@@ -68,6 +71,19 @@ function App() {
               <Users />
             </RequireAuth>
           } />
+          <Route path='manageallorders' element={
+            <RequireAuth>
+              <ManageallOrders />
+            </RequireAuth>
+          } />
+          <Route path='payment/:id' element={
+            <RequireAuth>
+              <Payment></Payment>
+            </RequireAuth>
+
+          }
+
+          ></Route>
 
         </Route>
 
@@ -90,20 +106,10 @@ function App() {
         ></Route>
 
 
-        <Route path='/payment' element={
-          <RequireAuth>
-            <Payment></Payment>
-          </RequireAuth>
-
-        }
-
-        ></Route>
-
-
-
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div >
   );
 }

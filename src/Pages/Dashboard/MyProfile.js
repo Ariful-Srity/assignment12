@@ -16,9 +16,9 @@ const MyProfile = () => {
 
 
     useEffect(() => {
-        setLoggedInUser(users.find(u => u.userEmail === user.email));
+        setLoggedInUser(users.find(u => u.email === user.email));
     }, [users, user.email]);
-    console.log(users);
+    // console.log(loggedInUser);
 
     //  if (loading || updateLoading) {
     //    return <Loading />;
@@ -43,6 +43,7 @@ const MyProfile = () => {
         })
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 setUpdate(false);
                 setUpdateLoading(false);
                 setLoggedInUser(userProfileInfo);
