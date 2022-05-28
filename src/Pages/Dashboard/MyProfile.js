@@ -55,7 +55,7 @@ const MyProfile = () => {
 
 
     return (
-        <div className=' mx-5 '>
+        <div className=' mx-5 my-3'>
 
             <h2 className="text-3xl">My Profile</h2>
             <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-5">

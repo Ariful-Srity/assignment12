@@ -30,7 +30,7 @@ const UserRow = ({ user }) => {
             })
     }
     return (
-        <tr>
+        <tr className=''>
             <th></th>
             <td>{email}</td>
             <td>{role !== 'admin' && <button onClick={makeAdmin} className="btn btn-success btn-outline">Make Admin</button>}</td>

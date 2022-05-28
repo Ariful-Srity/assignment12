@@ -19,7 +19,6 @@ const Header = () => {
 
         <li><Link to='/myportfolio'>My Portfolio</Link></li>
 
-        <li><Link to='about'>About</Link></li>
 
 
 

@@ -23,6 +23,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Notfound from './Pages/Shared/Notfound/Notfound';
 import ManageallOrders from './Pages/Dashboard/ManageallOrders';
+import AddaProduct from './Pages/Dashboard/AddaProduct';
+import ManageProduct from './Pages/Dashboard/ManageProduct';
 
 function App() {
   return (
@@ -74,6 +76,16 @@ function App() {
           <Route path='manageallorders' element={
             <RequireAuth>
               <ManageallOrders />
+            </RequireAuth>
+          } />
+          <Route path='addaproduct' element={
+            <RequireAuth>
+              <AddaProduct />
+            </RequireAuth>
+          } />
+          <Route path='manageproduct' element={
+            <RequireAuth>
+              <ManageProduct />
             </RequireAuth>
           } />
           <Route path='payment/:id' element={

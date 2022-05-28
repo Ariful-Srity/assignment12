@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ontor from '../../images/ontor.jpg'
 
 const Portfolio = () => {
@@ -91,9 +92,9 @@ const Portfolio = () => {
                 <div class=" bg-base-100 shadow-xl">
                     <div class=" ">
                         <h1 className='text-center text-warning text-5xl'>Live Links:</h1>
-                        <p>Link 1: https://bespoke-bienenstitch-d3788a.netlify.app </p>
-                        <p>Link 2:https://regal-bublanina-e71d5d.netlify.app </p>
-                        <p>Link 3:https://hardcore-einstein-33a1b2.netlify.app </p>
+                        <p className='text-success'>Link 1: https://bespoke-bienenstitch-d3788a.netlify.app </p>
+                        <p className='text-success'>Link 2:https://regal-bublanina-e71d5d.netlify.app </p>
+                        <p className='text-success'>Link 3:https://hardcore-einstein-33a1b2.netlify.app </p>
 
                     </div>
                 </div>

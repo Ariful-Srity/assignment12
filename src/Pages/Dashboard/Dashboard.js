@@ -16,7 +16,7 @@ const Dashboard = () => {
     }, [users, user.email]);
     console.log(loggedInUser)
     return (
-        <div className='flex my-5  '>
+        <div className='flex sm:flex-cols-1 lg:grid-cols-2  '>
             <div className='grid grid-cols-1  bg-primary w-40 h-96 rounded-3xl'>
                 <h3 className='text-center'>Dashboard</h3>
                 <>{

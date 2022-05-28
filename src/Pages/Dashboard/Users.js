@@ -15,7 +15,7 @@ const Users = () => {
         setLoggedInUser(users.find(u => u.email === user.email));
     }, [users, user.email]);
     console.log(loggedInUser)
-    
+
 
     //const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/users', {
     //  method: 'GET',
@@ -27,10 +27,11 @@ const Users = () => {
     //  return <Loading></Loading>
     //}
     return (
-        <div>
-            <h2 className="text-2xl">All Users: {users.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+        <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
+
+            <div className="overflow-x-auto">
+                <h2 className="text-4xl text-center text-warning">All Users: {users.length}</h2>
+                <table className="table lg:w-full sm:w-half">
                     <thead>
                         <tr>
                             <th></th>
