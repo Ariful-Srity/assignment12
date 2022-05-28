@@ -18,7 +18,7 @@ const MyOrders = () => {
     const handleDeleteButton = _id => {
         const proceed = window.confirm('Are you sure to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${_id}`;
+            const url = `https://dry-ravine-38749.herokuapp.com/orders/${_id}`;
             fetch(url, {
                 method: 'delete'
             })

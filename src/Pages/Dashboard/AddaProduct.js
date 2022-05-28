@@ -19,7 +19,7 @@ const AddaProduct = () => {
         const Supplier = user?.displayName;
         const newItem = { Name, Quantity, Price, Details, img, Supplier };
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://dry-ravine-38749.herokuapp.com/services', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

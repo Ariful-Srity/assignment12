@@ -12,7 +12,7 @@ const Payment = () => {
     const [selectedOrder, setSelectedOrder] = useState({});
 
     useEffect(() => {
-        setSelectedOrder(orders.find(order => order._id === id));
+        setSelectedOrder(orders?.find(order => order._id === id));
     }, [id, orders]);
 
     const { toolName, totalPrice } = selectedOrder || {};

@@ -16,7 +16,7 @@ const MyProfile = () => {
 
 
     useEffect(() => {
-        setLoggedInUser(users.find(u => u.email === user.email));
+        setLoggedInUser(users?.find(u => u.email === user.email));
     }, [users, user.email]);
     // console.log(loggedInUser);
 
@@ -33,7 +33,7 @@ const MyProfile = () => {
         const education = event.target.education.value;
         const userProfileInfo = { location, linkedIn, education, phone };
 
-        const url = `http://localhost:5000/users/${loggedInUser._id}`;
+        const url = `https://dry-ravine-38749.herokuapp.com/users/${loggedInUser._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

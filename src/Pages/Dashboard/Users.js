@@ -12,12 +12,12 @@ const Users = () => {
     const [users] = useUsers();
     const [loggedInUser, setLoggedInUser] = useState({});
     useEffect(() => {
-        setLoggedInUser(users.find(u => u.email === user.email));
+        setLoggedInUser(users?.find(u => u.email === user.email));
     }, [users, user.email]);
     console.log(loggedInUser)
 
 
-    //const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/users', {
+    //const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://dry-ravine-38749.herokuapp.com/users', {
     //  method: 'GET',
     //  headers: {
     //    authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -36,7 +36,7 @@ const Purchase = () => {
         else {
             const order = { quantity, address, userName, userEmail, totalPrice, phone, toolName: userSelectedItem.Name };
 
-            fetch('http://localhost:5000/orders', {
+            fetch('https://dry-ravine-38749.herokuapp.com/orders', {
                 method: 'post',
                 headers: {
                     'content-type': 'application/json'

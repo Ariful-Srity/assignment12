@@ -16,7 +16,7 @@ const AddReview = () => {
         const newItem = { Name, img, Ratings, Descript };
 
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://dry-ravine-38749.herokuapp.com/reviews', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

@@ -6,14 +6,17 @@ import auth from '../../firebase.init';
 import useUsers from '../../Hooks/useUsers';
 
 const Dashboard = () => {
+    const [count, setCount] = useState(0);
     const [user] = useAuthState(auth);
-    const [users] = useUsers();
+    const [users, loading] = useUsers();
     const [loggedInUser, setLoggedInUser] = useState({});
 
-
     useEffect(() => {
-        setLoggedInUser(users.find(u => u.email === user.email));
+        setLoggedInUser(users?.find(u => u.email === user.email));
     }, [users, user.email]);
+    if (loading) {
+        return;
+    }
     console.log(loggedInUser)
     return (
         <div className='flex sm:flex-cols-1 lg:grid-cols-2  '>

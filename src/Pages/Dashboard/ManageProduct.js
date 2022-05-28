@@ -5,7 +5,7 @@ const ManageProduct = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://dry-ravine-38749.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [services])
@@ -13,7 +13,7 @@ const ManageProduct = () => {
     const handleDelete = _id => {
         const proceed = window.confirm('Are you sure to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/services/${_id}`;
+            const url = `https://dry-ravine-38749.herokuapp.com/services/${_id}`;
             fetch(url, {
                 method: 'delete'
             })
